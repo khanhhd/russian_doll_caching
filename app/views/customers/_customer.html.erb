@@ -1,0 +1,16 @@
+<% cache customer do %>
+  <tr>
+    <td><%= customer.name %></td>
+    <td><%= customer.address %></td>
+    <td>
+      <table>
+        <tr>
+          <th> product name </th>
+        </tr>
+  <% customer.products.each do |prod| %>
+    <%= render "customers/product", prod: prod %>
+  <% end %>
+      </table>
+    </td>
+  </tr>
+<% end %>

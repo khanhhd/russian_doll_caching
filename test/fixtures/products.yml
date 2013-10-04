@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pro_name: MyString
+  amount: 1
+
+two:
+  pro_name: MyString
+  amount: 1

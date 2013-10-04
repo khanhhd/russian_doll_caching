@@ -1,0 +1,24 @@
+<h1>Listing customers</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Product</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <%= render "customers/customer", customer: customer %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>
+
+<%= link_to 'List products', products_path %>
+
